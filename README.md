@@ -34,7 +34,7 @@ Python package project template.
    rm dev-requirements.txt
    ```
 
-2. Add requirements
+1. Add requirements
 
    ```sh
    # Edit text
@@ -45,17 +45,17 @@ Python package project template.
    rm requirements.txt
    ```
 
-3. Rename folders.
+1. Rename folders.
    * Replace `./src/pkg_name` to your package import name.
    * Replace `./tests/pkg_name` to your package import name.
-4. Edit `pyproject.toml`
+1. Edit `pyproject.toml`
    * Replace **OWNER/REPO_NAME** to your repostory name.
    * Replace **pkg-name** to your package name.
    * Repkace **pkg_name** to your package import name.
    * Update `tool.poetry`
-5. Edit `.flake8` for your project.
+1. Edit `.flake8` for your project.
    * Replace **pkg_name** to your package import name.
-6. Integrate to CircleCI. (If you want)
+1. Integrate to CircleCI. (If you want)
 
 ## Development
 
