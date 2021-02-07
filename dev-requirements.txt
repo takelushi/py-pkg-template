@@ -66,3 +66,4 @@ flake8-copyright
 # pytest extensions
 # ========================================================
 pytest-cov
+pytest-html
