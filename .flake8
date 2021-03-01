@@ -2,7 +2,7 @@
 ignore = H601
 # exclude = __init__.py
 
-per-file-ignores=
+per-file-ignores =
    **/__init__.py:ABS101
 
 # flake8-quotes
