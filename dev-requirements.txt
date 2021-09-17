@@ -50,6 +50,7 @@ flake8-return
 flake8-simplify
 flake8-string-format
 pep8-naming
+pyproject-flake8
 # Any project will be better
 # flake8-dashboard
 # flake8-alfred

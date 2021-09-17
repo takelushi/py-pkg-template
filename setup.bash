@@ -16,7 +16,6 @@ elif [ $1 = 'name' ] ; then
     echo "Package name: ${package_name}"
     sed -i "s/\"pkg-name\"/\"${project_name}\"/g" pyproject.toml
     sed -i "s/\"pkg_name\"/\"${package_name}\"/g" pyproject.toml
-    sed -i "s/= pkg_name/= ${package_name}/g" .flake8
     mv './src/pkg_name' "./src/${package_name}"
     mv './tests/pkg_name' "./tests/${package_name}"
 elif [ $1 = 'package' ] ; then
@@ -32,9 +31,9 @@ elif [ $1 = 'package' ] ; then
 
 elif [ $1 = 'clean' ] ; then
     echo 'Remove all files...'
-    # rm pyproject.example.toml
-    # rm dev-requirements.txt
-    # rm requirements.txt
+    rm pyproject.example.toml
+    rm dev-requirements.txt
+    rm requirements.txt
     echo 'Finally execute "rm setup.bash".'
 else
     echo "Unknown subcommand. '${1}'"

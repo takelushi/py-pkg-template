@@ -8,7 +8,7 @@ license = "MIT"
 repository = "https://github.com/OWNER/REPO_NAME"
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.7"
 
 [tool.poetry.dev-dependencies]
 
@@ -25,9 +25,28 @@ line_length = "79"
 force_single_line = false
 known_first_party = ["pkg_name"]
 
+[tool.yapf]
+based_on_style = "google"
+column_limit = 79
+
+[tool.flake8]
+ignore = "H601"
+# exclude = "__init__.py"
+per-file-ignores = [
+    "**/__init__.py:ABS101"
+]
+# flake8-quotes
+inline-quotes = "single"
+multiline-quotes = "double"
+# flake8-import-order
+application-import-names = "pkg_name"
+import-order-style = "google"
+# flake8-coding
+no-accept-encodings = "true"
+
 [tool.pytest.ini_options]
 minversion = "6.2"
 addopts = "--cov=src/ --cov-report term-missing"
 testpaths = [
-    "tests"
+   "tests"
 ]
