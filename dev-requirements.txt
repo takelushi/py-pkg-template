@@ -51,16 +51,16 @@ flake8-simplify
 flake8-string-format
 pep8-naming
 # Any project will be better
-flake8-dashboard
-flake8-alfred
-nitpick
-wemake-python-styleguide
+# flake8-dashboard
+# flake8-alfred
+# nitpick
+# wemake-python-styleguide
 # For SQL
-flake8-sql
+# flake8-sql
 # For Pandas
-pandas-vet
+# pandas-vet
 # Copyright
-flake8-copyright
+# flake8-copyright
 
 # ========================================================
 # pytest extensions

@@ -11,50 +11,26 @@ Python package project template.
    mv py-pkg-template <YOUR_REPOSITORY_NAME>
    ```
 
-1. Initialize poetry project and edit
+1. Setup repository.
 
    ```sh
-   rm pyproject.toml
-   poetry init
-   # Edit pyproject.toml.
-   # Example: pyproject.example.toml
+   # Create pyproject.toml
+   bash setup.bash pyproject
    vi pyproject.toml
-   # Remove example.
-   rm pyproject.example.toml
-   ```
 
-1. Add development requirements
+   # Name project.
+   bash setup.bash name
 
-   ```sh
-   # Edit text
+   # Install packages
    vi dev-requirements.txt
-   # Install
-   cat dev-requirements.txt | grep -E '^[^# ]' | cut -d= -f1 | xargs -n 1 poetry add --dev
-   # Remove text
-   rm dev-requirements.txt
-   ```
-
-1. Add requirements
-
-   ```sh
-   # Edit text
    vi requirements.txt
-   # Install
-   cat dev-requirements.txt | grep -E '^[^# ]' | cut -d= -f1 | xargs -n 1 poetry add
-   # Remove text
-   rm requirements.txt
+   bash setup.bash package
+
+   # Clean repository.
+   bash setup.bash clean
+   rm setup.bash
    ```
 
-1. Rename folders.
-   * Replace `./src/pkg_name` to your package import name.
-   * Replace `./tests/pkg_name` to your package import name.
-1. Edit `pyproject.toml`
-   * Replace **OWNER/REPO_NAME** to your repostory name.
-   * Replace **pkg-name** to your package name.
-   * Repkace **pkg_name** to your package import name.
-   * Update `tool.poetry`
-1. Edit `.flake8` for your project.
-   * Replace **pkg_name** to your package import name.
 1. Integrate to CircleCI. (If you want)
 
 ## Development
