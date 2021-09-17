@@ -1,8 +1,5 @@
 #!/usr/bin/bash
 
-# echo 'Package Name:'
-# read project_name
-
 if [ $1 = 'pyproject' ] ; then
     echo 'Create pyproject.toml'
     rm -f pyproject.toml
